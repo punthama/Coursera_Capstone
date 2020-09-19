@@ -4,3 +4,6 @@ There are many accidents occur in Seattle. Each incident has different severity 
 Since we have raw data for each accident, one way to reduce it is to learn from the accident that was occured. 
 To see what behevioural reflects the severity of an accident. This can help us understand the nature of the accident and we can proceed 
 preventive action to change on the properties that lead to high severity accident. This analysis tried to find features that impact to the severity level.
+
+Target audience can be a government staff who responsible on the transpotation at the Seattle.
+For example, if the traffic light at night time impact the severity level, then staff might have a project to increase more street light.

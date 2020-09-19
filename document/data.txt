@@ -6,18 +6,28 @@ There are 37 attribute and 194,673 rows in the raw data that we can use to learn
 3. data contain too many null value (such as 'EXCEPTRSNCODE', 'PEDROWNOTGRNT', 'SPEEDING'). 
 
 Data that is interesting to be a feature to solve the problem is listed as the following.
-1. ADDRTYPE - Collision address type {Alley, Block, Intersection}
-2. COLLISIONTYPE - Collision type {Parked car, Angles, Rear Ended, Sidewipe, Left Turn, RightTurn, Pedestrian, Cycles, Head On, Other}
+1. ADDRTYPE - Collision address type 
+   Sample data = {Alley, Block, Intersection}
+2. COLLISIONTYPE - Collision type 
+   Sample data = {Parked car, Angles, Rear Ended, Sidewipe, Left Turn, RightTurn, Pedestrian, Cycles, Head On, Other}
 3. PERSONCOUNT - The total number of people involved in the collision
 4. PEDCOUNT - The number of pedestrians involved in the collision
 5. PEDCYLCOUNT - The number of bicycles involved in the collision
 6. VEHCOUNT - The number of vehicles involved in the collision
 7. INCDTTM - The date and time of the incident in format MM/dd/YYYY HH:mm:ss AM/PM
-8. JUNCTIONTYPE - Category of junction at which collision took place {'At Intersection (intersection related)', 'Mid-Block (not related to intersection)', 'Driveway Junction', 'Mid-Block (but intersection related)', 'At Intersection (but not related to intersection)', 'Unknown', 'Ramp Junction'}
-9. SDOT_COLCODE - A code given to the collision by SDOT (such as 11 means MOTOR VEHICLE STRUCK MOTOR VEHICLE, FRONT END AT ANGLE, 16 means MOTOR VEHICLE STRUCK MOTOR VEHICLE, LEFT SIDE SIDESWIPE)
+   Sample data = 3/27/2013 2:54:00 PM
+8. JUNCTIONTYPE - Category of junction at which collision took place 
+   Sample data = {'At Intersection (intersection related)', 'Mid-Block (not related to intersection)', 'Driveway Junction', 'Mid-Block (but intersection related)', 
+   'At Intersection (but not related to intersection)', 'Unknown', 'Ramp Junction'}
+9. SDOT_COLCODE - A code given to the collision by SDOT 
+   Sample data = 11 means MOTOR VEHICLE STRUCK MOTOR VEHICLE, FRONT END AT ANGLE, 16 means MOTOR VEHICLE STRUCK MOTOR VEHICLE, LEFT SIDE SIDESWIPE
 10. UNDERINFL - Whether or not a driver involved was under the influence of drugs or alcohol.
-11. WEATHER - A description of the weather conditions during the time of the collision {Clear, Raining, Overcast, Snowing, Fog/Smog/Smoke, Sleet/Hail/Freezing Rain, Blowing Sand/Dirt, Severe Crosswind, Partly Cloudy, Other, Unknown}
-12. ROADCOND - The condition of the road during the collision {Dry, Wet, Unknown, Ice, Snow/Slush, Standing Water, Sand/Mud/Dirt, Oil, Other}
-13. LIGHTCOND - The light conditions during the collision {Daylight, Dark - Street Lights On, Dark - No Street Lights, Unknown, Dusk, Dawn, Dark - Street Lights Off, Other, Dark - Unknown Lighting}
-14. ST_COLCODE - A code provided by the state that describes the collision (such as 0 means 'Vehicle Going Straight Hits Pedestrian', 11 means 'From Same Direction -Both Going Straight-Both Moving- Sideswipe')
+11. WEATHER - A description of the weather conditions during the time of the collision 
+    Sample data = {Clear, Raining, Overcast, Snowing, Fog/Smog/Smoke, Sleet/Hail/Freezing Rain, Blowing Sand/Dirt, Severe Crosswind, Partly Cloudy, Other, Unknown}
+12. ROADCOND - The condition of the road during the collision 
+    Sample data = {Dry, Wet, Unknown, Ice, Snow/Slush, Standing Water, Sand/Mud/Dirt, Oil, Other}
+13. LIGHTCOND - The light conditions during the collision 
+    Sample data = {Daylight, Dark - Street Lights On, Dark - No Street Lights, Unknown, Dusk, Dawn, Dark - Street Lights Off, Other, Dark - Unknown Lighting}
+14. ST_COLCODE - A code provided by the state that describes the collision 
+    Sample data = 0 means 'Vehicle Going Straight Hits Pedestrian', 11 means 'From Same Direction -Both Going Straight-Both Moving- Sideswipe'
 15. HITPARKEDCAR - Whether or not the collision involved hitting a parked car. (Y/N)
